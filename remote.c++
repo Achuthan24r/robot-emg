@@ -1,7 +1,4 @@
-/* ===== BLUETOOTH REMOTE CONTROLLER CODE =====
-   Sends commands to Rescue Robot
-   Board: Arduino UNO / Nano
-*/
+
 
 int forwardBtn  = 2;
 int backwardBtn = 3;
