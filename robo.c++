@@ -1,7 +1,6 @@
 #include <Servo.h>
 
-/* ===== PIN DEFINITIONS ===== */
-// Motor Driver
+
 int IN1 = 8;
 int IN2 = 9;
 int IN3 = 10;
@@ -9,19 +8,18 @@ int IN4 = 11;
 int ENA = 5;
 int ENB = 6;
 
-// Ultrasonic Sensor
+
 int trigPin = 2;
 int echoPin = 3;
 
-// Sensors
-int pirPin   = 12;   // Human detection
-int flamePin = A0;   // Fire sensor
-int gasPin   = A1;   // Gas sensor
+int pirPin   = 12;   
+int flamePin = A0;   
+int gasPin   = A1;   
 
-// Output
+
 int buzzer = 13;
 
-// Servo
+
 int servoPin = 4;
 Servo scanServo;
 
@@ -53,7 +51,6 @@ void setup() {
   Serial.begin(9600);
 }
 
-/* ===== LOOP ===== */
 void loop() {
 
   if (Serial.available()) {
